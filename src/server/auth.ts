@@ -70,6 +70,7 @@ export const authOptions: NextAuthOptions = {
       // userinfo: "https://kapi.kakao.com/v2/user/me",
       profile(profile) {
         console.log(profile);
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-return
         return profile;
       },
     },
