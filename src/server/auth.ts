@@ -67,7 +67,6 @@ export const authOptions: NextAuthOptions = {
       authorization: `https://oauth.aliexpress.com/authorize?force_auth=true`,
       token: "https://api-sg.aliexpress.com/auth/token/create",
       // token: "https://oauth.aliexpress.com/token",
-      // userinfo: "https://kapi.kakao.com/v2/user/me",
       profile(profile) {
         console.log(profile);
         // eslint-disable-next-line @typescript-eslint/no-unsafe-return

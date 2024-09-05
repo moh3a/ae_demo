@@ -29,6 +29,9 @@ dependencies:
   '@trpc/server':
     specifier: ^11.0.0-rc.446
     version: 11.0.0-rc.498
+  ae_sdk:
+    specifier: ^0.4.17
+    version: 0.4.17
   class-variance-authority:
     specifier: ^0.7.0
     version: 0.7.0
@@ -1255,6 +1258,10 @@ packages:
     engines: {node: '>=0.4.0'}
     hasBin: true
     dev: true
+
+  /ae_sdk@0.4.17:
+    resolution: {integrity: sha512-NRZKwn/KHseXBRJuvj+52dsXv+Ii5V30WwL1qNG1iOHDjreu1IBcEqEIxx+n78wLojSdBJi7bVPbunweoycA1w==}
+    dev: false
 
   /ajv@6.12.6:
     resolution: {integrity: sha512-j3fVLgvTo527anyYyJOGTYJbG+vnnQYvE0m5mmkc1TK+nxAppkCLMIL0aZ4dblVCNoGShhm+kzE4ZUykBoMg4g==}

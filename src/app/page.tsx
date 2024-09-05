@@ -5,7 +5,7 @@ import { api, HydrateClient } from "~/lib/trpc/server";
 import { Button } from "~/components/ui/button";
 
 export default async function Home() {
-  const hello = await api.post.hello({ text: "from tRPC" });
+  const fetchAeProducts = await api.ae.fetch();
   const session = await getServerAuthSession();
 
   return (
@@ -17,7 +17,7 @@ export default async function Home() {
           </h1>
           <div className="flex flex-col items-center gap-2">
             <p className="text-2xl text-white">
-              {hello ? hello.greeting : "Loading tRPC query..."}
+              {JSON.stringify(fetchAeProducts)}
             </p>
 
             <div className="flex flex-col items-center justify-center gap-4">
